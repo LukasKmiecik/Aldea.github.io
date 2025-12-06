@@ -1,10 +1,142 @@
+<!-- /index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Moja strona</title>
+  <meta charset="UTF-8" />
+  <title>Aldea – Living Lab for a Regenerative Future</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script defer src="assets/js/main.js"></script>
 </head>
 <body>
-  <h1>Strona działa!</h1>
+  <div class="page">
+    <header class="header">
+      <div class="header-inner">
+        <div class="logo-wrap">
+          <div class="logo-mark"><span>AD</span></div>
+          <div class="logo-text">
+            <div class="logo-title">Aldea</div>
+            <div class="logo-subtitle">Living, learning & sharing village</div>
+          </div>
+        </div>
+        <div class="nav">
+          <div class="lang-badge">
+            <div class="lang-dot"></div>
+            <span>Choose your language</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrapper">
+      <section class="hero">
+        <div class="hero-grid">
+          <div>
+            <div class="hero-kicker">
+              <span class="dot"></span>
+              <span>Open documentation for a regenerative settlement</span>
+            </div>
+            <h1 class="hero-title">
+              Welcome to <span class="accent">Aldea</span><br />
+              an experimental blueprint for future communities.
+            </h1>
+            <p class="hero-lead">
+              This site hosts the living documentation of Aldea – a self-sufficient,
+              collaborative micro-city focused on ecology, technology and culture.
+              Pick your language to explore the project.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="./pl/">
+                Wejdź po polsku
+              </a>
+              <a class="btn btn-ghost" href="./en/">
+                Enter in English
+              </a>
+            </div>
+          </div>
+          <aside class="hero-card">
+            <div class="hero-card-inner">
+              <div class="hero-card-title">Where are you from?</div>
+              <div class="hero-badge-row">
+                <span class="badge-soft">🌍 Global community</span>
+                <span class="badge-soft">📖 Open source manifesto</span>
+                <span class="badge-soft">🧪 Living lab</span>
+              </div>
+              <p class="hero-lead">
+                Aldea is designed as a replicable model – a blueprint that any group
+                can adapt to their climate, culture and scale. The documentation is
+                free to read, translate and remix.
+              </p>
+            </div>
+          </aside>
+        </div>
+
+        <div class="section" style="margin-top:2rem;">
+          <div class="section-header">
+            <div>
+              <div class="section-kicker">Languages</div>
+              <h2 class="section-title">Choose your language</h2>
+            </div>
+          </div>
+          <div class="lang-grid">
+            <div class="lang-card" data-lang-link="pl">
+              <div class="lang-card-title">
+                <div class="lang-flag"></div>
+                <h2>Polski</h2>
+              </div>
+              <p>Pełna wersja dokumentacji projektu Aldea w języku polskim.</p>
+            </div>
+            <div class="lang-card" data-lang-link="en">
+              <div class="lang-card-title">
+                <div class="lang-flag"></div>
+                <h2>English</h2>
+              </div>
+              <p>Overview and full documentation of Aldea in English.</p>
+            </div>
+            <div class="lang-card" data-lang-link="it">
+              <div class="lang-card-title">
+                <div class="lang-flag"></div>
+                <h2>Italiano</h2>
+              </div>
+              <p>Una panoramica del progetto Aldea in lingua italiana.</p>
+            </div>
+            <div class="lang-card" data-lang-link="es">
+              <div class="lang-card-title">
+                <div class="lang-flag"></div>
+                <h2>Español</h2>
+              </div>
+              <p>Resumen y documentación del proyecto Aldea en español.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <div>
+            <div class="section-kicker">Note</div>
+            <h2 class="section-title">How to add more languages later</h2>
+          </div>
+        </div>
+        <p style="font-size:0.86rem;color:var(--text-muted);margin-top:0;">
+          To add another language (e.g. German):
+        </p>
+        <ul class="clean">
+          <li>Create folder <code>/de/</code> with <code>index.html</code> based on
+            one of the existing language files.</li>
+          <li>Translate the texts inside that file.</li>
+          <li>Add another language card here with <code>data-lang-link="de"</code>.
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <span>© Aldea – open documentation project.</span>
+        <span>Built as a static site on GitHub Pages.</span>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
